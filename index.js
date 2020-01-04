@@ -6,8 +6,8 @@ const argv = require('yargs')
     .argv
 
 // Pull in a custom config file or package.json if it exists.
-const config = argv.config ? require(argv.config) :
-    existsSync('./package.json') ? require('./package.json') : {}
+const config = argv.config ? require(argv.config) : {}
+const package = existsSync('./package.json') ? require('./package.json') : {}
 
 // Input is a regular string that may contain JS template string syntax
 // Create a template string from the input string and eval it to
