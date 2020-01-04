@@ -1,10 +1,10 @@
+#!/usr/bin/env node
 const process = require('process')
 const { existsSync } = require('fs')
 const { exec } = require('child_process')
 const argv = require('yargs')
     .usage('Usage: [--config filename] "echo ${config.version}"')
     .argv
-
 // Pull in a custom config file or package.json if it exists.
 const config = argv.config ? require(argv.config) : {}
 const package = existsSync('./package.json') ? require('./package.json') : {}

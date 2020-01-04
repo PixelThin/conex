@@ -1,11 +1,12 @@
 {
   "name": "conex",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Execute arbitrary CLI commmands with arguments from a config file (e.g. package.json)",
   "main": "index.js",
   "author": "PixelThin, LLC",
   "license": "MIT",
   "dependencies": {
     "yargs": "^15.1.0"
-  }
+  },
+  "bin": "./index.js"
 }
