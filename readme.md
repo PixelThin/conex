@@ -30,7 +30,7 @@ yarn add -D conex
 }
 ```
 
-## Access values from a custom config (JSON) file:
+## Access values from a custom config (JSON) file via command-line:
 ```
-TBD
+conex --config ./some-file.json 'echo my name is ${config.name}'
 ```
